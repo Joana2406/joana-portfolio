@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %} 
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portafolio.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Currículo</span>
+{% endblock %}
+
+{% block content %}
+    <!-- Proyecto: Infraestructura como Servicio -->
+    <div class="row project mb-4">  	
+        <!-- Imagen del proyecto -->
+        <div class="col-lg-4 col-md-5 offset-lg-1">
+            <img class="img-fluid rounded" src="{% static 'core/img/iac.jpg' %}" alt="" >
+            
+        </div>
+        
+        <!-- Detalles del proyecto -->
+        <div class="col-lg-6 col-md-7">
+            <h2 class="section-heading title">IAC Virtual Assistant</h2>   
+            <p> IAC Voice es una aplicación móvil desarrollada en React Native que funciona como un asistente de voz inteligente.</p>
+            <a href="https://main.d2oiee202v4h3m.amplifyapp.com/" class="btn btn-primary">
+                Más Información
+            </a>
+        </div>
+    </div>
+    <hr>
+
+
+        
+        
+{% endblock %}
